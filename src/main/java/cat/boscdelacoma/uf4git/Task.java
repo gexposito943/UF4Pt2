@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package cat.boscdelacoma.uf4git;
 
 /**
@@ -9,5 +6,37 @@ package cat.boscdelacoma.uf4git;
  * @author guillemexposito
  */
 public class Task {
-    
+    private String description;
+    private boolean isCompleted;
+
+    public Task(String description) {
+        this.description = description;
+        this.isCompleted = false;
+    }
+
+    // Getters y setters
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+    public void setCompleted(boolean completed) {
+        this.isCompleted = completed;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "description='" + description + '\'' +
+                ", isCompleted=" + isCompleted +
+                '}';
+    }
+
 }
+
